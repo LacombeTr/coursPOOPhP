@@ -1,7 +1,6 @@
 <?php
 
 namespace classes;
-
 class Panier
 {
     public array $panier;
