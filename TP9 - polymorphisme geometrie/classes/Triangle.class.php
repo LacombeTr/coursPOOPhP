@@ -2,11 +2,22 @@
 
 namespace classes;
 
-class Triangle extends FormeGeometrique
+final class Triangle extends FormeGeometrique
 {
-    public function calculateArea(float $side1, float $side2, float $side3)
+    private float $side1;
+    private float $side2;
+    private float $side3;
+
+    public function __construct(float $side1, float $side2, float $side3)
     {
-        $demiPerim = ($side1 + $side2 + $side3) / 2;
-        return sqrt($demiPerim * ($demiPerim - $side1) * ($demiPerim - $side2) * ($demiPerim - $side3));
+        $this->side1 = $side1;
+        $this->side2 = $side2;
+        $this->side3 = $side3;
+    }
+
+    public function calculateArea()
+    {
+        $demiPerim = ($this->side1 + $this->side2 + $this->side3) / 2;
+        return sqrt($demiPerim * ($demiPerim - $this->side1) * ($demiPerim - $this->side2) * ($demiPerim - $this->side3));
     }
 }

@@ -2,10 +2,17 @@
 
 namespace classes;
 
-class Cercle extends FormeGeometrique
+final class Cercle extends FormeGeometrique
 {
-    public function calculateArea(float $lenght)
+    private float $radius;
+
+    public function __construct(float $radius)
     {
-        return 3.14 * 2 * $lenght;
+        $this->radius = $radius;
+    }
+
+    public function calculateArea()
+    {
+        return 3.14 * 2 * $this->radius;
     }
 }
