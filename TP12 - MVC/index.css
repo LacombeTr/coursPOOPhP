@@ -1,0 +1,15 @@
+table{
+    border: black 1px solid;
+}
+
+thead{
+    background: #8d8d8d;
+}
+
+th{
+    border: black 1px solid;
+}
+
+td{
+    padding-inline: 16px;
+}
