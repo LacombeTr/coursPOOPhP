@@ -2,7 +2,7 @@
 
 namespace classes;
 
-class Animal
+class AnimalOld
 {
     public string $name;
     public int $age;

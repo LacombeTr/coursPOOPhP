@@ -2,7 +2,7 @@
 
 namespace classes;
 
-final class Chat extends Animal
+final class Chat extends AnimalOld
 {
     public string $couleur;
 

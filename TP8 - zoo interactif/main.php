@@ -10,12 +10,12 @@ spl_autoload_register(function ($class) {
     }
 });
 
-use classes\Chien;
+use classes\ChienOld;
 use classes\Chat;
 use classes\Oiseau;
 
 $mesAnimaux = array(
-    new Chien("Médor", 6, "Bouvier Bernois"),
+    new ChienOld("Médor", 6, "Bouvier Bernois"),
     new Chat("Biscotte", 11, "grise"),
     new Oiseau("Coco", 22, "gris du Gabon")
 );

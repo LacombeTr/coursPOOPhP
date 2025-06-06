@@ -2,7 +2,7 @@
 
 namespace classes;
 
-final class Oiseau extends Animal
+final class Oiseau extends AnimalOld
 {
     public string $espece;
 
